@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Relations | Yellow Line LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .investor-hero {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 5rem 0;
+        }
+        .financial-card {
+            border-left: 4px solid #FFD700;
+            transition: all 0.3s;
+        }
+        .financial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .key-metric {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #FFD700;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/logo.png" height="40" alt="Yellow Line LLC">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="investors.html"><i class="fas fa-coins"></i> Investors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="warehouse.html"><i class="fas fa-warehouse"></i> Warehouse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html"><i class="fas fa-building"></i> Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="legal.html"><i class="fas fa-gavel"></i> Legal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="investor-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Investor Relations</h1>
+            <p class="lead">Building bridges in cross-border trade between Japan and South Asia</p>
+        </div>
+    </section>
+
+    <!-- Financial Highlights -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Financial Highlights</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card financial-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Year 1 Projection</h5>
+                            <p class="key-metric text-warning">¥33.7M</p>
+                            <p class="card-text">Projected revenue with established client base in Nepal and initial market penetration in Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card financial-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Year 2 Growth</h5>
+                            <p class="key-metric text-success">¥77.4M</p>
+                            <p class="card-text">Anticipated revenue with expanded product lines and new distribution channels</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card financial-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Year 3 Target</h5>
+                            <p class="key-metric text-primary">¥94.2M</p>
+                            <p class="card-text">Planned revenue with full market penetration and operational efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunities -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Investment Opportunities</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4><i class="fas fa-chart-line text-warning me-2"></i> Growth Potential</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent">✓ Established supply chains in Nepal and Bangladesh</li>
+                        <li class="list-group-item bg-transparent">✓ Growing demand for Japanese health supplements</li>
+                        <li class="list-group-item bg-transparent">✓ Untapped market for Nepalese food products in Japan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4><i class="fas fa-shield-alt text-success me-2"></i> Risk Mitigation</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent">✓ Diversified product portfolio</li>
+                        <li class="list-group-item bg-transparent">✓ Experienced management team</li>
+                        <li class="list-group-item bg-transparent">✓ Multiple revenue streams</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">For Investment Inquiries</h2>
+            <a href="mailto:investors@yellowline.tokyo" class="btn btn-warning btn-lg px-4">
+                <i class="fas fa-envelope me-2"></i> Contact Our Team
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

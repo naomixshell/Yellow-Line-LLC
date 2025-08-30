@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal | Yellow Line LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .legal-section {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .legal-nav .nav-link {
+            color: #2c3e50;
+            border-left: 3px solid transparent;
+        }
+        .legal-nav .nav-link.active {
+            border-left: 3px solid #FFD700;
+            font-weight: 600;
+        }
+        .lang-switcher .btn {
+            border: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Same as other pages) -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/logo.png" height="40" alt="Yellow Line LLC">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="investors.html"><i class="fas fa-coins"></i> Investors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="warehouse.html"><i class="fas fa-warehouse"></i> Warehouse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html"><i class="fas fa-building"></i> Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="legal.html"><i class="fas fa-gavel"></i> Legal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Legal Header -->
+    <header class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">Legal Information</h1>
+            <p class="lead">法令遵守と規約</p>
+        </div>
+    </header>
+
+    <!-- Language Switcher -->
+    <div class="container mt-3">
+        <div class="lang-switcher btn-group float-end">
+            <button class="btn btn-sm btn-light active lang-btn" data-lang="en">English</button>
+            <button class="btn btn-sm btn-light lang-btn" data-lang="ja">日本語</button>
+        </div>
+    </div>
+
+    <!-- Legal Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Legal Navigation -->
+            <div class="col-md-3 mb-4">
+                <div class="card legal-nav">
+                    <div class="card-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#terms" data-bs-toggle="tab">
+                                    <i class="fas fa-file-contract me-2"></i>
+                                    <span class="en">Terms of Service</span>
+                                    <span class="ja d-none">利用規約</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#privacy" data-bs-toggle="tab">
+                                    <i class="fas fa-user-shield me-2"></i>
+                                    <span class="en">Privacy Policy</span>
+                                    <span class="ja d-none">プライバシーポリシー</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#compliance" data-bs-toggle="tab">
+                                    <i class="fas fa-balance-scale me-2"></i>
+                                    <span class="en">Compliance</span>
+                                    <span class="ja d-none">コンプライアンス</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Documents -->
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- Terms of Service -->
+                    <div class="tab-pane fade show active legal-section p-4" id="terms">
+                        <div class="en">
+                            <h3 class="mb-4">Terms of Service</h3>
+                            <h5>1. General Provisions</h5>
+                            <p>Yellow Line LLC (hereinafter "the Company") is a cross-border trade company registered in Tokyo, Japan (Registration Number: 123456789).</p>
+                            
+                            <h5>2. Governing Law</h5>
+                            <p>These Terms shall be governed by and construed in accordance with the laws of Japan.</p>
+                            
+                            <h5>3. Intellectual Property</h5>
+                            <p>All content on this website is the property of Yellow Line LLC and protected by Japanese copyright laws.</p>
+                        </div>
+                        <div class="ja d-none">
+                            <h3 class="mb-4">利用規約</h3>
+                            <h5>第1条（総則）</h5>
+                            <p>イエローライン合同会社（以下「当社」）は、東京都に登録された越境貿易会社です（登記番号：123456789）。</p>
+                            
+                            <h5>第2条（準拠法）</h5>
+                            <p>本規約は日本法に準拠し、日本法により解釈されます。</p>
+                            
+                            <h5>第3条（知的財産権）</h5>
+                            <p>本ウェブサイトのすべてのコンテンツはイエローライン合同会社の財産であり、日本の著作権法により保護されています。</p>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Policy -->
+                    <div class="tab-pane fade legal-section p-4" id="privacy">
+                        <div class="en">
+                            <h3 class="mb-4">Privacy Policy</h3>
+                            <h5>1. Personal Information Protection</h5>
+                            <p>We comply with Japan's Act on the Protection of Personal Information (APPI).</p>
+                            
+                            <h5>2. Data Collection</h5>
+                            <p>We collect only necessary information for business operations with your consent.</p>
+                        </div>
+                        <div class="ja d-none">
+                            <h3 class="mb-4">プライバシーポリシー</h3>
+                            <h5>第1条（個人情報保護）</h5>
+                            <p>当社は日本の個人情報保護法に準拠しています。</p>
+                            
+                            <h5>第2条（データ収集）</h5>
+                            <p>お客様の同意を得た上で、業務に必要な情報のみを収集します。</p>
+                        </div>
+                    </div>
+
+                    <!-- Compliance -->
+                    <div class="tab-pane fade legal-section p-4" id="compliance">
+                        <div class="en">
+                            <h3 class="mb-4">Compliance</h3>
+                            <h5>1. Anti-Bribery Policy</h5>
+                            <p>We strictly adhere to Japan's Unfair Competition Prevention Act.</p>
+                            
+                            <h5>2. Export Controls</h5>
+                            <p>All international transactions comply with FEFTA and related regulations.</p>
+                        </div>
+                        <div class="ja d-none">
+                            <h3 class="mb-4">コンプライアンス</h3>
+                            <h5>第1条（反贈収賄方針）</h5>
+                            <p>当社は日本の不正競争防止法を厳守しています。</p>
+                            
+                            <h5>第2条（輸出管理）</h5>
+                            <p>すべての国際取引は外国為替法および関連規制に準拠しています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="bg-dark text-white py-4">
+        <!-- Your existing footer code -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Language switching functionality
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Toggle active class
+                document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show selected language
+                const lang = this.dataset.lang;
+                document.querySelectorAll('.en, .ja').forEach(el => {
+                    el.classList.toggle('d-none', !el.classList.contains(lang));
+                });
+            });
+        });
+
+        // Initialize Bootstrap tabs
+        const tabEls = document.querySelectorAll('a[data-bs-toggle="tab"]');
+        tabEls.forEach(tabEl => {
+            tabEl.addEventListener('shown.bs.tab', () => {
+                // Update active state in nav
+                document.querySelectorAll('.legal-nav .nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                tabEl.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

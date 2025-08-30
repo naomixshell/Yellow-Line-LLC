@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Yellow Line LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .careers-hero {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 5rem 0;
+        }
+        .job-card {
+            border-left: 4px solid #FFD700;
+            transition: all 0.3s;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .modal-header.bg-warning {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" height="40" alt="Yellow Line LLC">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investors.html"><i class="fas fa-coins"></i> Investors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="warehouse.html"><i class="fas fa-warehouse"></i> Warehouse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html"><i class="fas fa-building"></i> Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="legal.html"><i class="fas fa-gavel"></i> Legal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="careers-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Join Our Team</h1>
+            <p class="lead">We're hiring international talent for our Tokyo operations</p>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Current Openings</h2>
+            
+            <div class="row g-4">
+                <!-- Job Listing 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 job-card">
+                        <div class="card-body">
+                            <h4 class="text-warning mb-3">
+                                <i class="fas fa-boxes me-2"></i> Warehouse Supervisor
+                            </h4>
+                            <div class="mb-3">
+                                <span class="badge bg-dark me-2"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</span>
+                                <span class="badge bg-success"><i class="fas fa-passport"></i> Visa Sponsorship Available</span>
+                            </div>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Manage daily warehouse operations</li>
+                                <li class="list-group-item">Coordinate international shipments</li>
+                                <li class="list-group-item">Lead multicultural team</li>
+                            </ul>
+                            <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="Warehouse Supervisor">
+                                <i class="fas fa-paper-plane me-2"></i> Apply Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Listing 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 job-card">
+                        <div class="card-body">
+                            <h4 class="text-warning mb-3">
+                                <i class="fas fa-globe-asia me-2"></i> International Trade Specialist
+                            </h4>
+                            <div class="mb-3">
+                                <span class="badge bg-dark me-2"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</span>
+                                <span class="badge bg-success"><i class="fas fa-passport"></i> Visa Sponsorship Available</span>
+                            </div>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Handle import/export documentation</li>
+                                <li class="list-group-item">Coordinate with overseas partners</li>
+                                <li class="list-group-item">Japanese language skills preferred</li>
+                            </ul>
+                            <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#applyModal" data-position="International Trade Specialist">
+                                <i class="fas fa-paper-plane me-2"></i> Apply Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title">Job Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="jobApplicationForm" class="needs-validation" novalidate>
+                        <input type="hidden" id="positionField">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nationality" class="form-label">Nationality</label>
+                                <input type="text" class="form-control" id="nationality">
+                            </div>
+                            <div class="col-12">
+                                <label for="cv" class="form-label">Upload CV (PDF/DOC) *</label>
+                                <input type="file" class="form-control" id="cv" accept=".pdf,.doc,.docx" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="coverLetter" class="form-label">Cover Letter</label>
+                                <textarea class="form-control" id="coverLetter" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-warning px-4">
+                                <i class="fas fa-paper-plane me-2"></i> Submit Application
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/logo.png" alt="Yellow Line LLC" height="40">
+                    <p class="mt-2">Cross-border trade specialists</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 2-10-17 Kishimachi, Kita-ku, Tokyo</p>
+                    <p><i class="fas fa-phone"></i> +81 70-9108-3494</p>
+                    <p><i class="fas fa-envelope"></i> careers@yellowline.tokyo</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="legal.html" class="text-white">Visa Information</a></li>
+                        <li><a href="contact.html" class="text-white">HR Contact</a></li>
+                        <li><a href="investors.html" class="text-white">Employee Benefits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Set position when modal opens
+        document.getElementById('applyModal').addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const position = button.getAttribute('data-position');
+            document.getElementById('positionField').value = position;
+            document.querySelector('.modal-title').textContent = `Apply for ${position}`;
+        });
+
+        // Form validation
+        document.getElementById('jobApplicationForm').addEventListener('submit', function (event, bootstrap) {
+            bootstrap.Modal = undefined;
+            if (!this.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            this.classList.add('was-validated');
+            
+            if (this.checkValidity()) {
+                // Form submission logic here
+                alert('Application submitted successfully!');
+                const modal = bootstrap.Modal.getInstance(document.getElementById('applyModal'));
+                modal.hide();
+            }
+        });
+    </script>
+</body>
+</html>

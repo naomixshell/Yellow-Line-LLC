@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile | Yellow Line LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .profile-hero {
+            background: linear-gradient(135deg, rgba(7, 192, 248, 0.91), rgba(7, 192, 248, 0.91));
+            color: white;
+            padding: 5rem 0;
+        }
+        .profile-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .founder-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #f68907;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Yellow Line LLC" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="warehouse.html"><i class="fas fa-warehouse"></i> Warehouse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="investors.html"><i class="fas fa-chart-line"></i> Investors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html"><i class="fas fa-building"></i> Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="profile-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Company Profile</h1>
+            <p class="lead">Bridging markets between Japan and South Asia</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Yellow Line LLC</h2>
+                    <p>Founded in November 2024, Yellow Line LLC specializes in cross-border trade between Japan and South Asian countries, focusing on two core business lines:</p>
+                    <ol class="mb-4">
+                        <li>Export of Japanese health supplements and tea products to Nepal and Bangladesh</li>
+                        <li>Import of Nepalese food products to Japan</li>
+                    </ol>
+                    <p>With our headquarters in Tokyo's Kita-ku district, we leverage our founder's 13 years of experience in international trade to create efficient supply chains.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card profile-card">
+                        <div class="card-body text-center p-4">
+                            <img src="assets/img/founder.jpg" alt="Koilara Devi Prusadou" class="founder-img rounded-circle mb-3">
+                            <h4>Koilara Devi Prusadou</h4>
+                            <p class="text-muted">Founder & Representative</p>
+                            <p>13 years experience in international trade with expertise in South Asian markets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Lines -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Business Lines</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card profile-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-warning">
+                                <i class="fas fa-pills me-2"></i> Health Products Export
+                            </h4>
+                            <p class="card-text">We export high-quality Japanese health supplements and tea products to South Asian markets, focusing on:</p>
+                            <ul>
+                                <li>DHC brand supplements</li>
+                                <li>Japanese organic teas</li>
+                                <li>Specialty health products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card profile-card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title text-success">
+                                <i class="fas fa-utensils me-2"></i> Food Products Import
+                            </h4>
+                            <p class="card-text">We import authentic Nepalese food products to Japan, supplying:</p>
+                            <ul>
+                                <li>Himalayan rock salt</li>
+                                <li>Traditional spices</li>
+                                <li>Organic honey and coffee</li>
+                                <li>Specialty ingredients</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
